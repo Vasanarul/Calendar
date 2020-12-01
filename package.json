@@ -1,0 +1,23 @@
+{
+  "name": "calendar",
+  "version": "1.0.0",
+  "description": "A working calendar application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vasanarul/Calendar.git"
+  },
+  "author": "Vasan Arul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vasanarul/Calendar/issues"
+  },
+  "homepage": "https://github.com/Vasanarul/Calendar#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
