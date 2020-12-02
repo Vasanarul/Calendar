@@ -3,11 +3,11 @@ import moment from "moment";
 import '../index.css';
 
 function Calendar () {
+  const calendar = [];
   const value = moment();
   const startDay = value.clone().startOf("month").startOf("week");
   const endDay = value.clone().endOf("month").endOf("week");
   const day = startDay.clone().subtract(1, "day");
-  const calendar = [];
 
   while(day.isBefore(endDay, "day")) {
       calendar.push(
@@ -15,16 +15,18 @@ function Calendar () {
           .map(() => day.add(1, "day").clone())
       )
   }
-  return <div>
+  return (
+    <div className="calendar">
       {
         calendar.map((week) =>
         <div>
           {week.map((day) => (
-            <div>{day.format("D").toString()}</div>
+            <div className="day">{day.format("D").toString()}</div>
           ))}
         </div>)
       }
-  </div>;
+    </div>
+  )
 }
 
 export default Calendar;
