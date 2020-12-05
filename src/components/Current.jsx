@@ -7,6 +7,8 @@ function Current () {
   const [value, setValue] = useState(moment());
   const startDay = value.clone().startOf("week");
   const endDay = value.clone().endOf("week");
+  const AM = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+  const PM = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 //   const [color, setColor] = useState("blue");
 
     useEffect(() =>{
@@ -26,13 +28,29 @@ function Current () {
   return (
     console.log(calendar),
     <div className="calendar">
-      {calendar.map((day) => (
-        <div>
-          <div className="day" key={day._d}>{day.toString()}</div>
-          <br></br>
-          <br></br>
-        </div>
-      ))}
+      <div>
+        {calendar.map((day) => (
+          <div>
+            <div className="day" key={day._d}>{day.toString()}</div>
+          </div>
+        ))}
+      </div>
+      <div>
+        {AM.map((hour) => (
+          <div>
+            <div>{hour} AM</div>
+            <br></br>
+          </div>
+        ))}
+      </div>
+      <div>
+        {PM.map((hour) => (
+          <div>
+            <div>{hour} PM</div>
+            <br></br>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

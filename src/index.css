@@ -2,7 +2,7 @@
   color: black;
 }
 
-.calendar .day {
+/* .calendar .day {
   position: relative;
   width: calc(100% / 7);
   height: 44px;
@@ -13,7 +13,7 @@
   box-sizing: border-box;
   z-index: 1;
   text-align: center
-}
+} */
 
 /* .grid {
   position: absolute;
