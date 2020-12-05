@@ -28,13 +28,11 @@ function Current () {
   return (
     console.log(calendar),
     <div className="calendar">
-      <div>
-        {calendar.map((day) => (
-          <div>
-            <div className="day" key={day._d}>{day.toString()}</div>
-          </div>
-        ))}
-      </div>
+      {calendar.map((day) => (
+        <div>
+          <div className="day" key={day._d}>{day.toString()}</div>
+        </div>
+      ))}
       <div>
         {AM.map((hour) => (
           <div>

@@ -7,6 +7,8 @@ function Next () {
   const [value, setValue] = useState(moment());
   const startDay = value.clone().add(1, "week").startOf("week");
   const endDay = value.clone().add(1, "week").endOf("week");
+  const AM = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+  const PM = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 //   const [color, setColor] = useState("blue");
 
     useEffect(() =>{
@@ -32,6 +34,22 @@ function Next () {
           <br></br>
         </div>
       ))}
+      <div>
+        {AM.map((hour) => (
+          <div>
+            <div>{hour} AM</div>
+            <br></br>
+          </div>
+        ))}
+      </div>
+      <div>
+        {PM.map((hour) => (
+          <div>
+            <div>{hour} PM</div>
+            <br></br>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
