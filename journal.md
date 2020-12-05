@@ -19,3 +19,12 @@ Downloaded Moment.js for time accuracy
 5:10
 
 Following tutotials and looking through React documentation, seems like the best way to transmit the dates is to use moment and an array that I can map through to identify each date from the beginning of this week till the end of the month
+
+5:40
+Adding useState to account for changes one could make in the calendar, also added useEffect to avoid the error of having "too many renders"
+
+12/4/20
+
+Breakthrough, used Moment.js to get dates for this week, the previous week, and the following week. Now working on using React Router to navigate between the dates
+
+
