@@ -27,4 +27,8 @@ Adding useState to account for changes one could make in the calendar, also adde
 
 Breakthrough, used Moment.js to get dates for this week, the previous week, and the following week. Now working on using React Router to navigate between the dates
 
+12/6/20
+
+Was able to properly format the dates to a month/day position using a second level map, added horizontal lines and spacing to have it more closely resemble a calendar
+
 

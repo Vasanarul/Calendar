@@ -2,6 +2,11 @@
   color: black;
 }
 
+.week {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 /* .calendar .day {
   position: relative;
   width: calc(100% / 7);

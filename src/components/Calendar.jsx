@@ -21,8 +21,8 @@ function Calendar () {
       <Router>
         <div>
           <nav>
-            <Link to="/">{`Current Week  |  `}</Link>
             <Link to="/last">{`Last Week  |  `}</Link>
+            <Link to="/">{`Current Week  |  `}</Link>
             <Link to="/next">{`Next Week`}</Link>
           </nav>
           <Switch>

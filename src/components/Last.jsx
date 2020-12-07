@@ -32,7 +32,7 @@ function Last () {
       {calendar.map((week) => (
         <div>
           {week.map((day) => (
-            <div className="day" key={day._d}>{day.toString()}</div>
+            <span>{day.format("MM/DD ").toString()}</span>
           ))}
         </div>
       ))}
@@ -42,6 +42,7 @@ function Last () {
           <div>
             <div>{hour} AM</div>
             <br></br>
+            <hr></hr>
           </div>
         ))}
       </div>
@@ -50,6 +51,7 @@ function Last () {
           <div>
             <div>{hour} PM</div>
             <br></br>
+            <hr></hr>
           </div>
         ))}
       </div>
