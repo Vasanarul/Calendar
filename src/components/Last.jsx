@@ -28,12 +28,15 @@ function Last () {
   return (
     console.log(calendar),
     <div className="calendar">
-      {calendar.map((day) => (
+      <br></br>
+      {calendar.map((week) => (
         <div>
-          <div className="day" key={day._d}>{day.toString()}</div>
-          <br></br>
+          {week.map((day) => (
+            <div className="day" key={day._d}>{day.toString()}</div>
+          ))}
         </div>
       ))}
+      <br></br>
       <div>
         {AM.map((hour) => (
           <div>
